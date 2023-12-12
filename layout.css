@@ -1,0 +1,46 @@
+/* Layout styles */
+
+/* Block and Floating Elements */
+section {
+    float: left;
+    width: 70%;
+    margin-right: 5%;
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+/* Floated Layout */
+section, aside {
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* Relative and Absolute Positioning */
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Handle Overflow */
+.overflow-container {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
